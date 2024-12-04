@@ -10,3 +10,16 @@ ng new client
 ng add @angular/material
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
+
+ ng add @angular/material
+ ng g c shared/components/custom-sidenav --skip-tests
+ ng g c shared/components/menu-item --skip-tests
+ ng g c shared/components/widget --skip-tests
+ ng g c shared/components/widget/widget-options --skip-tests
+ ng g c shared/components/dashboard-widget/customers-info --skip-tests
+ ng g c shared/components/dashboard-widget/suppliers-info --skip-tests
+ ng g c shared/components/dashboard-widget/products-info --skip-tests
+ ng g c shared/components/dashboard-widget/orders-info --skip-tests
+ ng g c shared/components/dashboard-widget/categories-info --skip-tests
+
+  ng g c layout/header --skip-tests
