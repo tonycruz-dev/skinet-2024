@@ -5,3 +5,8 @@ Add-Migration InitialCreation -StartupProject API -Project Infrastructure
 Add-Migration InitialCreation -StartupProject API -Project Infrastructure
 
 Drop-Database -StartupProject API -Project Infrastructure -Force
+
+ng new client
+ng add @angular/material
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
