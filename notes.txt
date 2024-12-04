@@ -26,3 +26,5 @@ npx tailwindcss init
   ng g c features/shop --skip-tests
   ng g c features/shop/filters-dialog --skip-tests
   ng g c features/shop/product-item --skip-tests
+  ng g c features/home --skip-tests
+  ng g c features/shop/product-details --skip-tests
