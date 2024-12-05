@@ -32,3 +32,6 @@ npx tailwindcss init
   ng g c shared/components/not-found --skip-tests
   ng g c shared/components/server-error --skip-tests
   ng g interceptor core/interceptors/error --skip-tests
+
+  docker compose up -d
+  docker compose down
