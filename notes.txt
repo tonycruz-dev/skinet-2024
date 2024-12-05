@@ -10,6 +10,7 @@ ng new client
 ng add @angular/material
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
+npm i nanoid
 
  ng add @angular/material
  ng g c shared/components/custom-sidenav --skip-tests
@@ -29,7 +30,11 @@ npx tailwindcss init
   ng g c features/home --skip-tests
   ng g c features/shop/product-details --skip-tests
   ng g c features/test-error --skip-tests
+  ng g c features/cart --skip-tests
+  ng g c features/checkout --skip-tests
+  ng g c features/cart/cart-item --skip-tests
   ng g c shared/components/not-found --skip-tests
+  ng g c shared/components/order-summary --skip-tests
   ng g c shared/components/server-error --skip-tests
   ng g interceptor core/interceptors/error --skip-tests
 
