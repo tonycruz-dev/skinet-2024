@@ -1,4 +1,6 @@
-﻿namespace Core.Entities;
+﻿using System.Net;
+
+namespace Core.Entities;
 public class BaseEntity
 {
     public int Id { get; set; }
