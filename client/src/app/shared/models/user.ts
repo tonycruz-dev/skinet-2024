@@ -6,10 +6,11 @@ export type User = {
 };
 
 export type Address = {
-  line1: string;
-  line2?: string;
-  city: string;
-  state: string;
-  country: string;
-  postalCode: string;
+  line1: string | null;
+  line2: string | null;
+  city: string | null;
+  state: string | null;
+  country: string | null;
+  postal_code: string | null;
+  postalCode?: string | null;
 };

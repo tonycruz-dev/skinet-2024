@@ -31,10 +31,12 @@
             </dl>
         </div>
 
-        <div class="flex flex-col gap-2">
-            <button routerLink="/checkout" mat-flat-button>Checkout</button>
-            <button routerLink="/shop" mat-button>Continue Shopping</button>
-        </div>        
+         @if (location.path() !== '/checkout') {
+            <div class="flex flex-col gap-2">
+                <button routerLink="/checkout"  class="btn-purple">Checkout</button>
+                <button routerLink="/shop"  class="btn-purple">Continue Shopping</button>
+            </div>   
+        }
 
     </div>
 
@@ -48,7 +50,7 @@
                 <input type="text" matInput>
             </mat-form-field>
 
-            <button mat-flat-button>Apply code</button>
+            <button class="btn-purple">Apply code</button>
         </form>
     </div>
 

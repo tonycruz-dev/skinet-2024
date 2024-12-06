@@ -3,6 +3,7 @@ docker compose up -d
 Microsoft.EntityFrameworkCore.Tools -required
 Add-Migration InitialCreation -StartupProject API -Project Infrastructure
 Add-Migration IdentityAdded -StartupProject API -Project Infrastructure
+Add-Migration DeliveryMethodsAdded -StartupProject API -Project Infrastructure
 
 Drop-Database -StartupProject API -Project Infrastructure -Force
 
@@ -35,6 +36,12 @@ npm i nanoid
   ng g c features/cart/cart-item --skip-tests
   ng g c features/account/login --skip-tests
   ng g c features/account/register --skip-tests
+
+  ng g c features/checkout/checkout-delivery --skip-tests
+  ng g c features/checkout/checkout-review --skip-tests
+  ng g c features/checkout/checkout-success --skip-tests
+
+
   ng g g core/guards/auth --skip-tests
   ng g g core/guards/empty-cart --skip-tests
 
