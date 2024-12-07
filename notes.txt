@@ -6,6 +6,8 @@ Add-Migration IdentityAdded -StartupProject API -Project Infrastructure
 Add-Migration DeliveryMethodsAdded -StartupProject API -Project Infrastructure
 Add-Migration OrderAggregateAdded -StartupProject API -Project Infrastructure
 
+dotnet publish -c Release -o ./bin/Publish
+
 Drop-Database -StartupProject API -Project Infrastructure -Force
 
 ng new client
