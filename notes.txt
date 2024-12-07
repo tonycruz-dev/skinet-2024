@@ -38,6 +38,9 @@ npm i nanoid
   ng g c features/account/login --skip-tests
   ng g c features/account/register --skip-tests
 
+  ng g c features/orders --skip-tests
+  ng g c features/orders/order-detailed --skip-tests
+
   ng g c features/checkout/checkout-delivery --skip-tests
   ng g c features/checkout/checkout-review --skip-tests
   ng g c features/checkout/checkout-success --skip-tests
@@ -55,3 +58,5 @@ npm i nanoid
 
   docker compose up -d
   docker compose down
+
+  stripe listen --foward-to https://localhost:5000/api/Payments/webhook -e payment_intent.succeded
