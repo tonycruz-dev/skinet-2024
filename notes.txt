@@ -4,6 +4,7 @@ Microsoft.EntityFrameworkCore.Tools -required
 Add-Migration InitialCreation -StartupProject API -Project Infrastructure
 Add-Migration IdentityAdded -StartupProject API -Project Infrastructure
 Add-Migration DeliveryMethodsAdded -StartupProject API -Project Infrastructure
+Add-Migration OrderAggregateAdded -StartupProject API -Project Infrastructure
 
 Drop-Database -StartupProject API -Project Infrastructure -Force
 
