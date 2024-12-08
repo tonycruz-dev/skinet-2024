@@ -1,9 +1,10 @@
+@if (products && products.count > 0) {
 <div class="flex flex-col gap-3">
     <div class="flex justify-between">
         <mat-paginator
             class="bg-white"
             (page)="handlePageEvent($event)"
-            [length]="products?.count"
+            [length]="products.count"
             [pageSize]="shopParams.pageSize"
             [showFirstLastButtons]="true"
             [pageSizeOptions]="pageSizeOptions"
@@ -43,7 +44,7 @@
     </div>
 
     <div class="grid grid-cols-5 gap-4">
-        @for (product of products?.data; track product.id) {
+        @for (product of products.data; track product.id) {
         <app-product-item [product]="product"></app-product-item>
         }
     </div>
@@ -58,3 +59,12 @@
         }
     </mat-selection-list>
 </mat-menu>
+}  @else {
+    <app-empty-state 
+        message="No products match this filter"
+        icon="filter_alt_off"
+        actionText="Reset filters"
+        (action)="resetFilters()"
+    />
+
+}
