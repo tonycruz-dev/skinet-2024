@@ -6,6 +6,7 @@ Add-Migration IdentityAdded -StartupProject API -Project Infrastructure
 Add-Migration DeliveryMethodsAdded -StartupProject API -Project Infrastructure
 Add-Migration OrderAggregateAdded -StartupProject API -Project Infrastructure
 Add-Migration CouponsAdded -StartupProject API -Project Infrastructure
+Add-Migration RolesAdded -StartupProject API -Project Infrastructure
 
 dotnet publish -c Release -o ./bin/Publish
 
@@ -40,6 +41,7 @@ npm i nanoid
   ng g c features/cart/cart-item --skip-tests
   ng g c features/account/login --skip-tests
   ng g c features/account/register --skip-tests
+  ng g c features/admin --skip-tests
 
   ng g c features/orders --skip-tests
   ng g c features/orders/order-detailed --skip-tests
@@ -57,6 +59,7 @@ npm i nanoid
   ng g c shared/components/empty-state --skip-tests
   ng g c shared/components/order-summary --skip-tests
   ng g c shared/components/server-error --skip-tests
+  ng g c shared/components/confirmation-dialog --skip-tests
   ng g interceptor core/interceptors/error --skip-tests
 
   docker compose up -d
